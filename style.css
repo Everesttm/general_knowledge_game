@@ -1,0 +1,122 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 5px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    width: 90%;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center; 
+    background-color: #0073e6;
+    color: white;
+    border-radius: 10px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 20px auto;
+    background-color: white; 
+    box-sizing: border-box;
+}
+
+article {
+    flex: 1 1 45%;
+    padding: 5%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #eef;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.placeholders {
+    margin: 10px 0; 
+    padding: 5px;
+}
+
+label {
+    display: block; 
+    font-size: 18px;
+    color: #555; 
+}
+
+input, select {
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box; 
+}
+
+input:focus, select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); /* Soft glow effect */
+}
+
+input:valid {
+    background-color: #eaffea;
+}
+
+input:invalid {
+    background-color: #ffebeb;
+}
+
+button[type=submit] {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    h1, label, input, select, button[type=submit] {
+        font-size: 16px;
+    }
+}
