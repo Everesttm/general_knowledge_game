@@ -1,9 +1,9 @@
 <?php
 
-$database_host = 'cs.neiu.edu';
-$database_user = 'SP24CS4121_haynazarov2';
-$database_password = 'haynazarov2618548';
-$database_name = 'SP24CS4121_haynazarov2';
+$database_host = 'huhuh.bcom';
+$database_user = 'okuihuh';
+$database_password = 'pasws';
+$database_name = 'usbame';
 
 $db = new mysqli($database_host, $database_user, $database_password, $database_name);
 
